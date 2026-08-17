@@ -1,6 +1,9 @@
 MIT License
 
-Copyright (c) 2026 Wang Liyuan
+Copyright (c) 2026 Wang Liyuan (王李原)
+
+ESP32-MPU6050-Attitude-System — 独立式 IMU 姿态采集系统
+(An independent IMU attitude acquisition system based on ESP32 & MPU6050)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
