@@ -82,9 +82,6 @@ ESP32-MPU6050-Attitude-System/
 ├── firmware/                        # 固件源码
 │   ├── ESP32_MPU6050_attitude/      # ★ 最终版主工程（Arduino IDE 直接打开）
 │   │   └── ESP32_MPU6050_attitude.ino
-│   ├── archive/                     # 历史版本归档（v1~v10）
-│   │   ├── README.md
-│   │   └── 01_basic_read.ino ~ 10_ble_v2.ino
 │   └── README.md
 ├── hardware/                        # 硬件资料
 │   ├── BOM/                         # 物料清单（xlsx + 订货单）
@@ -99,14 +96,9 @@ ESP32-MPU6050-Attitude-System/
 
 ## 固件开发历程 Firmware History
 
-| 版本 | 位置 | 里程碑 |
-| ---- | ---- | ------ |
-| v1~v4 | `archive/01~04` | 基础读取 → 物理单位 → 串口绘图 |
-| v5~v8 | `archive/05~08` | 互补滤波 → 零偏校准 → 静止检测消除漂移 |
-| v9~v10 | `archive/09~10` | BLE 无线传输 v1 / v2 |
-| **v11** | `ESP32_MPU6050_attitude/` | **最终版**：校准重试 + 姿态重置 + 低通滤波 + 动态 dt |
+固件经过 11 个版本迭代，当前仓库仅保留最终版主工程；完整演进记录（v1 基础读取 → v5 互补滤波 → v8 静止检测消除漂移 → v11 最终版）见 [`CHANGELOG.md`](CHANGELOG.md)。
 
-详见 [`CHANGELOG.md`](CHANGELOG.md)。
+**v11（当前）**：校准重试 + 姿态重置 + 低通滤波 + 动态 dt + BLE 传输，位于 `ESP32_MPU6050_attitude/`。
 
 ## 测量数据与分析 Measurement & Analysis
 

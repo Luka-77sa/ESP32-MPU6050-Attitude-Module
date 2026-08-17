@@ -1,16 +1,13 @@
 # 固件 (Firmware)
 
-ESP32 + MPU6050 姿态采集系统的全部固件源码。
+ESP32 + MPU6050 姿态采集系统的固件源码。
 
 ## 目录
 
 ```
 firmware/
-├── ESP32_MPU6050_attitude/   ★ 最终版主工程（Arduino IDE 直接打开）
-│   └── ESP32_MPU6050_attitude.ino
-└── archive/                  历史版本归档（v1~v10 功能演进）
-    ├── README.md             版本说明
-    └── 01_basic_read.ino ~ 10_ble_v2.ino
+└── ESP32_MPU6050_attitude/   ★ 最终版主工程（Arduino IDE 直接打开）
+    └── ESP32_MPU6050_attitude.ino
 ```
 
 ## 开发环境
@@ -28,11 +25,6 @@ firmware/
 
 ## 版本说明
 
-| 位置 | 版本 | 功能 |
-| ---- | ---- | ---- |
-| `archive/01~04` | v1~v4 | 基础读取 → 物理单位 → 串口绘图 |
-| `archive/05~08` | v5~v8 | 互补滤波 → 零偏校准 → 静止检测消除静态漂移 |
-| `archive/09~10` | v9~v10 | BLE 无线传输 v1/v2 |
-| `ESP32_MPU6050_attitude/` | **v11** | 最终版：全部功能 + 校准重试 + 姿态重置 + 动态 dt |
+当前为 **v11 最终版**：互补滤波 + 静止检测 + 零偏校准重试 + 低通滤波 + 动态 dt + BLE 传输。
 
-详细演进记录见 [`../CHANGELOG.md`](../CHANGELOG.md)。
+完整演进记录（v1~v11）见 [`../CHANGELOG.md`](../CHANGELOG.md)。
